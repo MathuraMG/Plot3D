@@ -1,0 +1,57 @@
+body
+{
+  background: #fff3e6;
+  height: 100%;
+}
+.wrapper {
+  margin-top: 10%;
+}
+
+h1 {
+  font-family: Raleway;
+  font-weight:100;
+  text-align:center;
+}
+
+h4 {
+  font-family: Raleway;
+  font-weight:100;
+  text-align:center;
+}
+
+.inputArea {
+  width:100%;
+  text-align:center;
+
+}
+#dataInputBox {
+    width:25%;
+    font-size:1em;
+    font-family: Raleway;
+    font-weight:100;
+}
+
+#dataInputButton {
+  font-size:1em;
+  font-family: Raleway;
+  font-weight:100;
+}
+
+#customFullCube {
+  position: inline;
+}
+
+.columnCustom{
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 0;
+
+
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 200px;
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 200px;
+  perspective: 800px;
+  perspective-origin: 100% 200px;
+  margin: 0 0;
+}
