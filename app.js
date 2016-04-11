@@ -11,7 +11,7 @@ function test(){
     }
     // var data = [10,20,30,23,54,65,10,98];
     console.log(window.innerWidth);
-    var width = (0.6*window.innerWidth)/data.length;
+    var width = (0.5*window.innerWidth)/data.length;
     var heightScale = (0.6*window.innerHeight)/(Math.max(...data));
     console.log(width);
     for(var i = data.length-1;i>=0;i--){
@@ -128,6 +128,6 @@ function createCube(width,height,dataLength,color)
   container.append(faceContainer);
 
   $('.wrapper').append(container);
-  $('.wrapper').css("transform","rotateZ(180deg) translateY(-" + 0.6*window.innerHeight + "px) translateX(" + 0.1*window.innerWidth + "px)");
+  $('.wrapper').css("transform","rotateZ(180deg) translateY(-" + 0.5*window.innerHeight + "px) translateX(" + 0.15*window.innerWidth + "px)");
 }
 window.onload = test;
