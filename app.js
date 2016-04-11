@@ -3,8 +3,10 @@
 function test(){
 
   $("#dataInputButton").click(function() {
-    var data = $("#dataInputBox").val().split(',');
-    for(var i=0;i<data.length;i++){
+    $('.wrapper').empty();
+    var data = [];
+    data = $("#dataInputBox").val().split(',');
+    for(var i = data.length-1;i>=0;i--){
       data[i] = parseInt(data[i]);
     }
     // var data = [10,20,30,23,54,65,10,98];
@@ -12,8 +14,7 @@ function test(){
     var width = (0.6*window.innerWidth)/data.length;
     var heightScale = (0.6*window.innerHeight)/(Math.max(...data));
     console.log(width);
-    for(var i=0;i<data.length;i++)
-    {
+    for(var i = data.length-1;i>=0;i--){
       var color = i*((360%200)/data.length);
       createCube(width,data[i]*heightScale,data.length,color);
     }
